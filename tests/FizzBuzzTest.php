@@ -20,4 +20,11 @@ final class FizzBuzzTest extends TestCase
 
         self::assertEquals("Fizz", $fizzBuzz->transform(3));
     }
+
+    public function test_it_transforms_5_to_buzz()
+    {
+        $fizzBuzz = new FizzBuzz();
+
+        self::assertEquals("Buzz", $fizzBuzz->transform(5));
+    }
 }

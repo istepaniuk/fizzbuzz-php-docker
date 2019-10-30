@@ -4,14 +4,17 @@ namespace FizzBuzz;
 
 final class FizzBuzz
 {
+    const FIZZ = 'Fizz';
+    const BUZZ = 'Buzz';
+
     public function transform(int $input): string
     {
         if($input == 3) {
-            return 'Fizz';
+            return self::FIZZ;
         }
 
         if($input == 5) {
-            return 'Buzz';
+            return self::BUZZ;
         }
 
         return $input;
