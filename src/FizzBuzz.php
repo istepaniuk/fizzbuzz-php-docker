@@ -13,7 +13,7 @@ final class FizzBuzz
             return self::FIZZ;
         }
 
-        if($input == 5) {
+        if($input % 5 == 0) {
             return self::BUZZ;
         }
 

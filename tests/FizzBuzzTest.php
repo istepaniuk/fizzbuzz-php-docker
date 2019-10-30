@@ -34,4 +34,11 @@ final class FizzBuzzTest extends TestCase
 
         self::assertEquals("Fizz", $fizzBuzz->transform(99));
     }
+
+    public function test_it_transforms_multiples_of_5_to_buzz()
+    {
+        $fizzBuzz = new FizzBuzz();
+
+        self::assertEquals("Buzz", $fizzBuzz->transform(55));
+    }
 }
