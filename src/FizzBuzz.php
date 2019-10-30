@@ -9,7 +9,7 @@ final class FizzBuzz
 
     public function transform(int $input): string
     {
-        if($input % 3 == 0) {
+        if($this->isMultipleOfThree($input)) {
             return self::FIZZ;
         }
 
@@ -18,5 +18,10 @@ final class FizzBuzz
         }
 
         return $input;
+    }
+
+    private function isMultipleOfThree(int $value): bool
+    {
+        return $value % 3 == 0;
     }
 }
