@@ -13,7 +13,7 @@ final class FizzBuzz
             return self::FIZZ;
         }
 
-        if($input % 5 == 0) {
+        if($this->isMultipleOfFive($input)) {
             return self::BUZZ;
         }
 
@@ -23,5 +23,10 @@ final class FizzBuzz
     private function isMultipleOfThree(int $value): bool
     {
         return $value % 3 == 0;
+    }
+
+    private function isMultipleOfFive(int $input): bool
+    {
+        return $input % 5 == 0;
     }
 }
