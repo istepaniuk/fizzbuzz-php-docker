@@ -42,7 +42,7 @@ Write a program that prints the numbers from 1 to 100. But for multiples of thre
 # New requirements
 
  - A number is Fizz if it has a 3 in it
- - A number is Buzz if it has a 5 in it
+ - A number is Buzz if it has a 5 in itjeslopcru/katas-php/master/fizz-buzz/
  - A number is FizzBuzz if
  	- it has a 3 in it
  	- it has a 5 in it
