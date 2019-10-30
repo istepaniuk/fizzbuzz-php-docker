@@ -9,7 +9,7 @@ final class FizzBuzz
 
     public function transform(int $input): string
     {
-        if($input == 3) {
+        if($input % 3 == 0) {
             return self::FIZZ;
         }
 
